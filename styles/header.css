@@ -3,10 +3,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 750px;
-  div {
-    justify-content: center;
-    margin: auto;
-  }
+  place-items: center;
+  row-gap: 80px;
 }
 
 .profile-pic {
@@ -17,4 +15,65 @@ header {
   object-position: center; /* Centers the image content within the circle */
   border: 2px solid var(--red);
   padding: 4px;
+}
+
+.avatar {
+  margin: auto;
+  position: relative;
+}
+
+.avatar-icon {
+  position: absolute;
+  bottom: 8px;
+  right: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation {
+  margin-top: -80px;
+  display: grid;
+  row-gap: 20px;
+  max-width: calc(100% - 200px); /* 100px left + right */
+  margin-inline: auto;
+  text-align: center;
+  span {
+    font: var(--subtitle);
+    span {
+      color: var(--red);
+    }
+  }
+  h1 {
+    font: var(--title-lg);
+    color: var(--gray-100);
+  }
+  p {
+    max-width: 720px; /* ideal reading width */
+    margin-inline: auto;
+    font: var(--text-sm);
+    color: var(--gray-300);
+  }
+}
+
+.stack-tag{
+  height: 40px;
+  gap: 8px;
+  background-color: var(--gray-400);
+  padding: 8px 16px ; 
+  margin: auto;
+  border-radius: 20px;
+  span{
+    font: var(--text);
+    color: var(--gray-100)
+  }
+  img{
+    height: 24px;
+    aspect-ratio: 1/1;
+  }
+}
+
+#stack-info{
+  justify-content: center;
+  column-gap: 20px;
 }

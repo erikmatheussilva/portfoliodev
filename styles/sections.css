@@ -1,14 +1,22 @@
 .projects {
   background: var(--gray-500);
+  padding-inline: 120px;
   #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  article{
-    img{
-        border-radius: 8px;
+  article {
+    img {
+      border-radius: 8px;
     }
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   @media (max-width: 1024px) {
