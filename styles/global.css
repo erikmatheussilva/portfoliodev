@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --red: #e3646e;
   --purple: #bb72e9;
@@ -15,7 +19,7 @@
   --gray-300: #878ea1;
   --gray-400: #292c34;
   --gray-500: #16181d;
-  --gray-600: #0D0E11;
+  --gray-600: #0d0e11;
   --asap: "Asap", sans-serif;
   --maven-pro: "Maven Pro", sans-serif;
   --inconsolata: "Inconsolata", monospace;
@@ -26,7 +30,6 @@
   --text: 400 16px/140% var(--maven-pro);
   --text-sm: 400 14px/140% var(--maven-pro);
 }
-
 
 a {
   text-decoration: none;
