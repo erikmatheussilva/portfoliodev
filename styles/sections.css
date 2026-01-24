@@ -79,9 +79,27 @@
     color: var(--gray-100);
     margin-block: 16px 66px;
   }
-  /* .service-card{
-
-  } */
+  div {
+    grid-template-columns: repeat(3, 290px);
+    gap: 24px;
+  }
+  .service-card {
+    padding: 20px;
+    border: 2px solid var(--gray-400);
+    border-radius: 8px;
+    img {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font: var(--title-sm);
+      color: var(--gray-100);
+      margin-bottom: 8px;
+    }
+    p {
+      font: var(--text-sm);
+      color: var(--gray-200);
+    }
+  }
 }
 
 .contact {
